@@ -1,26 +1,31 @@
 console.log("\nassignment 6");
 //module final assignment
 john = {
-    bills = [124, 48, 268, 180, 42],
-    tips = [],
+    bill : [124, 48, 268, 180, 42],
+    tips : [],
     calculateTip(){
+        billarr = this.bill;
         var tip;
-        for(var i=0; i<this.bills.length; i++){
+        var totalTip;
+        for(var i=0; i<this.bill.length; i++){
             switch(true){
-                case (bill[i] > 0 && bill[i] < 50) :
-                    tip = bill[i] * 0.2;
+                case (this.bill[i] > 0 && this.bill[i] < 50) :
+                    tip = this.bill[i] * 0.2;
                     break;
-                case (bill[i] > 50 && bill[i] < 200) :
-                    tip = bill[i] * 0.15;
+                case (this.bill[i] > 50 && this.bill[i] < 200) :
+                    tip = this.bill[i] * 0.15;
                     break;
-                case (bill[i] > 200) :
-                    tip = billi[i] * 0.1;
+                case (this.bill[i] > 200) :
+                    tip = this.bill[i] * 0.1;
                     break;
                 default:
                     tip = 0;
             }
         this.tips.push(tip);
+        totalTip = totalTip + tip;
         }
+        this.totalTip = totalTip;
     },
-    
 }
+john.calculateTip();
+console.log(john);
