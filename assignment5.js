@@ -1,3 +1,5 @@
+console.log("\nAssignment 5 \n");
+//Object and methods
 john = {
     name : "John Smith",
     mass : 35,
