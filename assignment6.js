@@ -61,12 +61,28 @@ calculateTip = function(){
     }
 }
 var avgTip = function(){
-    var sum = 0;
-    for(i=0; i<mark.tip.length; i++){
-        sum = sum + mark.tip[i];
+    var markSum = 0;
+    var johnSum = 0;
+
+    for(i=0; i<john.tips.length; i++){
+        johnSum = johnSum + john.tips[i];
     }
-    return sum/mark.tip.length;
+    johnAvg = johnSum / john.tips.length;
+
+    for(i=0; i<mark.tip.length; i++){
+        markSum = markSum + mark.tip[i];
+    }
+    markAvg = markSum / mark.tip.length;
+    
+    console.log("mark tip is " + markAvg + "\n" + "john tip is " + johnAvg);
+    if(johnAvg > markAvg){
+        console.log("John\'s family paid the highest tip.")
+    } else if (markAvg > johnAvg){
+        console.log("Mark\'s family paid the highest tip.")
+    } else {
+        console.log("Both family paid the same amount of tip.")
+    }
 }
 calculateTip();
 console.log("The tips array is : " + mark.tip)
-console.log("The average tip of mark is : " + avgTip());
+avgTip();
