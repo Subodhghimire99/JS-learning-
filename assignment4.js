@@ -1,3 +1,5 @@
+console.log("Assignment 4\n");
+//function and conditionals
 var tips = [];
 var tipWithBill = [];
 //tip calculator
