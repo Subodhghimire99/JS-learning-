@@ -23,17 +23,64 @@ html{
     max-width: 1140px;
     margin: 0 auto;
 }
+section{
+    padding: 80px 0px;
+}
 /* --------headings------- */
-.hero-text-box h1{
-    margin-top: 0px;
-    margin-bottom: 20px;
-    width: 1140px;
-    font-size: 240%;
+ h1,
+ h2,
+ h3{
     font-weight: 300;
     text-transform: uppercase;
-    color: #fff;
-    letter-spacing: 1px;
+}
+
+h1{
+    margin-bottom: 20px;
+    margin-top: 0px;
+    width: 1140px;
+    font-size: 240%;
     word-spacing: 4px;
+    color: #fff;    
+    letter-spacing: 1px;
+}
+
+h2{
+    font-size: 180%;
+    text-align: center;
+    word-spacing: 2px;
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+}
+
+h2::after{
+    display: block;
+    width: 100px;
+    background-color: #e67e22;
+    content: " "; 
+    margin: 30px auto 0px auto;
+    height: 2px;
+}
+
+h3{
+    font-size: 110%;
+    margin-bottom: 15px;
+}
+/* --------paragraphs------- */
+.long-copy{
+    line-height: 145%;
+    width: 70%;
+    margin-left: 15%;
+}
+
+.box{
+    line-height: 145%;
+    font-size: 90%;
+}
+
+/* --------icons------- */
+.icon-big{
+    font-size: 400%;
+    color: #e67e22;
 }
 
 /* --------buttons------- */
