@@ -1,2 +1,2 @@
 # JS-learning-
-learning files 
+Mini Projects and Assignments
